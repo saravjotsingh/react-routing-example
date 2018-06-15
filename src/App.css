@@ -1,0 +1,12 @@
+body{
+  background-color: #f4f4f4;
+}
+.row{ 
+	width: 60%;
+  margin-top:auto;
+  }
+
+  .card-image{
+    min-height: 100px;
+  }
+
