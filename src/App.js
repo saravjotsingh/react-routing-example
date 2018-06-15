@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import {BrowserRouter as Router,Link,Route} from 'react-router-dom';
 import './App.css';
 
+import createHistory from 'history/createBrowserHistory';
+
 import 'materialize-css/dist/css/materialize.min.css';
 
 
@@ -67,7 +69,7 @@ class App extends Component {
   render() {
   return (
       
-        <Router>
+        <Router history={createHistory}>
           <div>
           <Route exact path="/" render={(props)=> <Cars {...props} data={data}/>}/>
           <Route path="/cars/:id" render={(props)=><CarDetail {...props} data={data}/>}/>

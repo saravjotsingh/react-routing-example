@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
 
 class CarDetail extends Component {
+
+	Change = () =>{
+		console.log("hello");
+		//history.push('/');
+	}
+
+
   render() {
     
     const cars = this.props.data;
@@ -16,7 +23,7 @@ class CarDetail extends Component {
     console.log(car);
     return (
         		   	
-			<div className="row">
+			<div className="qq">
     			<div className="col s12 m7 cc">
       	<div className="card">
         <div className="card-image">
@@ -31,6 +38,7 @@ class CarDetail extends Component {
         </div>
       </div>
     </div>
+    
   </div>
     );
   }
